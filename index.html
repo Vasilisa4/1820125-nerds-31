@@ -4,10 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <img src="./img/nerds-logо.svg">
     <nav>
       <ul>
@@ -21,22 +22,16 @@
   </header>
 
   <main>
-    <section>
-      <div class="slider">
-        <label for="perekl"></label>
-        <label for="slider"></label>
-        <label for="slider"></label>
-        <label for="slider"></label>
-      </div>
-      <div>
+    <section class="section-slider">
+      <div class="slide">
         <h2>Долго, дорого, скрупулезно</h2>
-        <a href="#">Узнать больше</a>
+        <a class="button" href="#">Узнать больше</a>
         <div>
           <img src="img/index.png">
         </div>
       </div>
     </section>
-    <section>
+    <section class="services">
       <h2>Наши услуги</h2>
       <ul>
         <li>Веб-сайты
@@ -56,7 +51,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section class="company">
       <h3>О компании</h3>
       <div>
         <h2 class="header-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
@@ -80,20 +75,20 @@
         </ul>
       </div>
     </section>
-    <section>
+    <section class="customers">
       <ul>
-        <li><img src="img/logo_htmlacademy.png"></li>
-        <li><a href="#"></a>
-        <li><img src="img/logo_borodinski.png"></li>
-        <li><a href="#"></a>
-        <li><img src="img/logo_pink.png"></li>
-        <li><a href="#"></a></li>
-        <li><img src="img/logo_mishka.png"></li>
+        <li><img src="img/logo_htmlacademy.png">
+        <li><a href="#">
+        <li><img src="img/logo_borodinski.png"></a></li>
+        <li><a href="#">
+        <li><img src="img/logo_pink.png"></a></li>
+        <li><a href="#">
+        <li><img src="img/logo_mishka.png"></a></li>
       </ul>
     </section>
 
   </main>
-  <footer>
+  <footer class="contacts">
     <section>
       <img src="img/map.png"
         alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440"
@@ -107,7 +102,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="basement">
       <ul>
         <li>
           <a class="footer-left-column">
@@ -130,7 +125,7 @@
       </div>
     </section>
   </footer>
-  <section>
+  <section class="info">
     <form action="feedback-left-column">
       <div>
         <label class="data" for="login">Ваше имя:</label>
@@ -145,8 +140,8 @@
         <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>
       </div>
       <div class="block">
-        <button type="submit">Отправить</button>
-        <button type="submit">Отмена</button>
+        <button type="button">Отправить</button>
+        <button type="button">Отмена</button>
       </div>
     </form>
   </section>
