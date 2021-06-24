@@ -4,28 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс Muy</title>
+  <link rel="stylesheet" href="css/normalize.css" type="text/css" />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
 <body>
   <div>
+
     <header class="header">
-      <img class=logo src="./img/nerds_logo.svg" alt="логотип">
+      <img class="logo" src="./img/nerds_logo.png" alt="логотип">
       <nav>
         <ul>
-          <li class="navli"><a href="#">студия</a></li>
-          <li class="navli"><a href="#">клиенты</a></li>
-          <li class="navli"><a href='catalog.html'>Магазин</a></li>
-          <li class="navli"><a href="#"> контакты</a></li>
-          <li class="navli" id=navlik><a href="#"> &#128722; корзина</a></li>
+          <li class="menu-item"><a href="#">студия</a></li>
+          <li class="menu-item"><a href="#">клиенты</a></li>
+          <li class="menu-item"><a href='catalog.html'>Магазин</a></li>
+          <li class="menu-item"><a href="#"> контакты</a></li>
+          <li class="menu-item-korzina"><a href="#"> &#128722; корзина</a></li>
         </ul>
       </nav>
     </header>
-    
+
     <main>
       <section class="section-slider">
         <div>
-          <img class=index src="img/index.png" alt="фон меню">
+          <img class="index" src="img/index.png" alt="фон меню">
         </div>
         <div class="slide">
           <h2>Долго, дорого, скрупулезно</h2>
@@ -33,7 +35,8 @@
             Математически выверенный дизайн
             для вашего сайта или мобильного приложения.
           </p>
-          <a class="button" href="#">Узнать больше</a>
+          <div class="new-knew"><a class="button" href="#">Узнать больше</a></div>
+
         </div>
       </section>
       <section class="services">
@@ -43,25 +46,25 @@
             <img src="img/sait.jpg" alt="Веб-сайты">
             <br class="clear" />
             Веб-сайты
-            <p>Мир никогда не будет прежним
+            <p class="services-info">Мир никогда не будет прежним
               после того как увидит ваш сайт!</p>
-            <a href="#">Заказать</a>
+            <a class="button-web" href="#">Заказать</a>
           </li>
           <li>
             <img src="img/play.png" alt="Приложения">
             <br class="clear" />
             Приложения
-            <p>Покорите топ-10 приложений
+            <p class="services-info">Покорите топ-10 приложений
               в AppStore и Google Play</p>
-            <a id="buttongreen" href="#">Заказать</a>
+            <a class="button-application" href="#">Заказать</a>
           </li>
           <li>
             <img src="img/presen.png" alt="Презентации">
             <br class="clear" />
             Презентации
-            <p>Вы даже не подозреваете,
+            <p class="services-info">Вы даже не подозреваете,
               насколько вы изумительны!</p>
-            <a id="buttonyellow" href="#">Заказать</a>
+            <a class="button-presentation" href="#">Заказать</a>
           </li>
         </ul>
         <br class="clear" />
@@ -81,22 +84,23 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div class=work>
+
+        <div class="work">
           <p>Как мы работаем</p>
           <img src="img/nerds.png" alt="nerds">
           <div class="since">с 2004 года Любим точность во всем:</div>
-          <ul class=sinsc>
+          <ul class="since-advantage-procent">
             <li>146%</li>
             <li>100%</li>
             <li>50%</li>
           </ul>
-          <ul class=sinst>
+          <ul class="since-advantage">
             <li>С самоотдачей</li>
             <li>Соблюдая сроки на </li>
             <li>По предоплате </li>
           </ul>
         </div>
-        <hr class="l" />
+        <hr class="line" />
       </section>
       <section class="customers">
         <ul>
@@ -129,22 +133,31 @@
         <img src="img/map.png"
           alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="1440"
           height="416">
-        <img id="metka" src="img/m.png" alt="metka">
+        <div class="metka">
+          <img src="img/metka.png" alt="metka" />
+        </div>
         <div class="nerds">
           <div>
             <b>NЁRDS DESIGN STUDIO</b>
             <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
-            <p class=tel>тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+            <p class="tel">тел. <a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
             <a class="write-us button" href="#modal_open">Напишите нам</a>
           </div>
         </div>
-        <div id="modal_open" class="background_modal">
+        <!-- окно -->
+        <!-- модальное окно -->
+        <!-- задний план модального окна -->
+        <div id="modal_open" class="background-modal">
+          <!-- само модальное окно -->
           <div class="modal-dialog">
+            <!-- расположение контента-->
             <div class="modal-content">
+              <!-- инфо в окне -->
               <div class="window">
                 Напишите нам
                 <br class="clear" />
-                <div class=pols>
+
+                <div>
                   <label class="data" for="login">Ваше имя:</label>
                   <input autocapitalize="off" name="login" id="login" placeholder="Представьтесь, пожалуйста" required>
                 </div>
@@ -152,29 +165,32 @@
                   <label class="data" for="email">Ваш e-mail:</label>
                   <input type="email" name="email" id="email" placeholder="Для отправки ответа" required>
                 </div>
-                <div class="datat">
+                <div class="data-text-email">
+
                   <br class="clear" />
                   <label for="feedback-textarea">Текст письма:</label>
                   <br class="clear" />
                   <textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required
                     rows="5"></textarea>
                 </div>
-                <div class="buttonps">
-                  <button type="button">Отправить</button>
-                  <button id="buttonp" type="button">Отмена</button>
+                <div>
+                  <button class="button-send" type="button">Отправить</button>
+                  <button class="button-cancell" type="button">Отмена</button>
                 </div>
                 <a href="#" title="Закрыть модальное окно" class="close">×</a>
 
+
               </div>
+              <!--  -->
             </div>
           </div>
         </div>
       </section>
-      <section class="basement">
+      <section class="footer-sait">
         <ul class="icons">
           <li>
             <a class="footer-left-column">
-              <img src="./img/f.png" alt="fb_icon">
+              <img src="./img/facebook.png" alt="facebook_icon">
             </a>
           </li>
           <li>
@@ -183,7 +199,7 @@
           </li>
           <li>
             <a href="#" class="footer-btn footer-btn-inst">
-              <img src="./img/unnamed.png" alt="instagram icon">
+              <img src="./img/instagram.png" alt="instagram_icon">
             </a>
           </li>
         </ul>

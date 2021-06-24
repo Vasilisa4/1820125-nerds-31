@@ -1,12 +1,35 @@
+@font-face {
+	font-family: "Roboto";
+	src:
+		url("../fonts/roboto.woff"),
+		url("../fonts/roboto.woff2");
+	font-weight: normal;
+	font-style: normal;
+
+	font-family: "Robotobold";
+	src:
+    url("../fonts/robotobold.woff"),
+    url("../fonts/robotobold.woff2");
+	font-weight: normal;
+	font-style: normal;
+
+	font-family: "Robotomedium";
+	src:
+    url("../fonts/robotomedium.woff"),
+    url("../fonts/robotomedium.woff2");
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
+
     min-width: 900px;
     margin: 0;
     padding: 0;
     margin-left: auto;
     background-color: white;
     color: black;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Roboto","Robotobold", "Robotomedium", Arial, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -31,6 +54,17 @@ a {
     color: inherit;
 }
 
+.button , .button-application ,.button-presentation, .button-web{
+background-color: #FB565A;
+border: none;
+text-decoration: none;
+color: white;
+padding: 15px 54px 17px;
+font-weight: 700;
+font-size: 130%;
+  border-radius: 5px;
+}
+
 .header {
     background-color: #EEEEEE;
     height: 10%;
@@ -49,25 +83,26 @@ nav {
     margin-left: 30%;
     padding-bottom: 5%;
 }
+.menu-item a{
+  margin-left: 5%;
+}
 
-.navli a {
+.menu-item a, .menu-item-korzina a {
     float: left;
-    margin-left: 5%;
     margin-top: 2%;
     color: #000000;
     text-decoration: none;
     font-size: 120%;
-    font-family: Roboto;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.navli a:hover {
+.menu-item a:hover, .menu-item-korzina a:hover {
     padding-bottom: 8px;
     border-bottom: 2px solid #FB565A;
 }
 
-#navlik a {
+.menu-item-korzina a {
     float: right;
     margin-right: 15%
 }
@@ -79,6 +114,10 @@ nav {
     left: 140px;
     top: 114px;
 }
+
+
+/* телефоны index */
+
 .index {
     float: right;
     margin-right: 2%;
@@ -102,20 +141,17 @@ nav {
 
 .slide p {
     white-space: pre;
-    padding-left: 4%;
+    padding-left: 3%;
     font-size: 120%;
     margin-top: -1%;
     margin-bottom: 3%;
 }
 
-.button {
-    text-decoration: none;
-    color: white;
-    padding: 15px 54px 17px;
-    background-color: #FB565A;
-    margin-left: 8%;
-    border-radius: 5px;
+.new-knew{
+  margin-left: 8%;
 }
+
+
 
 .section-services {
     width: 1100px;
@@ -123,10 +159,15 @@ nav {
     left: 140px;
     top: 625px;
 }
+
+
+/* услуги */
+
 .services h2 {
     margin-top: 2%;
     margin-left: 6%;
 }
+
 .services li {
     float: left;
     margin-left: 6%;
@@ -142,7 +183,7 @@ nav {
     padding-top: 50%;
 }
 
-.services li p {
+.services-info {
     white-space: pre;
     font-size: 60%;
     line-height: 130%;
@@ -150,31 +191,33 @@ nav {
     margin-top: 4%;
     margin-bottom: 5%;
 }
+.button-web{
+	padding :5px 10px 5px;
+	font-weight: 500;
 
-.services li a {
-    margin-top: 2000%;
-    background-color: #FB565A;
-    text-decoration: none;
-    font-size: 70%;
-    padding: 5% 10% 5% 10%;
-    line-height: 200%;
-    color: #FFFFFF;
-    font-weight: 500;
 }
 
-#buttongreen {
+.button-application {
     background-color: #00CA74;
+		padding :5px 10px 5px;
+		font-weight: 500;
 }
 
-#buttonyellow {
-    background-color: #EFC849
+.button-presentation {
+    background-color: #EFC849;
+				padding: 5px 10px 5px;
+					font-weight: 500;
 }
 
 hr {
     border: none;
+    /* Убираем границу */
     background-color: #EEEEEE;
-    color: #EEEEEE;  
+    /* Цвет линии */
+    color: #EEEEEE;
+    /* Цвет линии для IE6-7 */
     height: 2px;
+    /* Толщина линии */
     margin-top: 5%;
     width: 84%;
     margin-left: 6%;
@@ -225,15 +268,15 @@ hr {
     font-weight: 800;
 }
 
-.sinsc li,
-.sinst li {
+.since-advantage-procent li,
+.since-advantage li {
     float: left;
     margin-left: 10%;
     font-size: 200%;
     font-weight: 700
 }
 
-.sinst li {
+.since-advantage li {
     float: left;
     font-size: 70%;
     margin-left: 10%;
@@ -241,7 +284,7 @@ hr {
     line-height: 140%;
 }
 
-.l {
+.line {
     margin-left: 0%;
     width: 88%;
 }
@@ -262,12 +305,12 @@ hr {
     width: 100%;
 }
 
-#metka {
+.metka img {
     position: absolute;
     height: 12%;
     width: 10%;
-    margin-left: -39.5%;
-    margin-top: 11%;
+    margin-left: 61%;
+    margin-top: -17%;
 }
 
 .nerds {
@@ -298,7 +341,9 @@ hr {
 }
 
 
-.background_modal {
+/* отдельное окно */
+
+.background-modal {
     position: fixed;
     top: 0;
     right: 0;
@@ -311,7 +356,7 @@ hr {
     padding: 0;
 }
 
-.background_modal:target {
+.background-modal:target {
     display: block;
     overflow-y: auto;
 }
@@ -320,13 +365,8 @@ hr {
     position: relative;
     width: auto;
     margin: 10px;
-}
-
-@media (min-width:700px) {
-    .modal-dialog {
-        width: 50%;
-        margin: 30px auto;
-    }
+		width: 50%;
+		margin: 30px auto;
 }
 
 .modal-content {
@@ -337,16 +377,11 @@ hr {
     outline: 0;
 }
 
-@media (min-width:768px) {
-    .my_modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
-    }
-}
+
 
 .close {
     padding: 1px 5px 0;
-    font-family: sans-serif;
+
     font-size: 50px;
     line-height: 1;
     color: #FB565A;
@@ -360,7 +395,7 @@ hr {
     margin-right: 3%
 }
 
-.my_modal-body {
+.my-modal-body {
     position: relative;
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
@@ -370,6 +405,8 @@ hr {
     overflow: auto;
 }
 
+
+/* стили в нем */
 
 .window {
     color: black;
@@ -408,12 +445,12 @@ input {
     padding: 4% 4% 4% 4%;
 }
 
-.datat label {
+.data-text-email label {
     font-size: 70%;
     font-weight: 800;
 }
 
-.datat textarea {
+.data-text-email textarea {
     margin-top: 1%;
     width: 90%;
     border: 2px solid #D7DCDE;
@@ -422,7 +459,7 @@ input {
     margin-bottom: 3%;
 }
 
-.buttonps button {
+.button-send, .button-cancell {
     float: left;
     background-color: #FB565A;
     margin-right: 5%;
@@ -434,11 +471,14 @@ input {
     border: none;
 }
 
-#buttonp {
+.button-cancell {
     padding: 2% 8% 2% 8%;
 }
 
-.basement {
+
+/*  */
+
+.footer-sait {
     margin-left: 6%;
     margin-top: 2%;
 }
@@ -473,81 +513,86 @@ input {
     margin-bottom: 5%;
 }
 
-.infowindow {
-    display: none;
-}
 
+
+
+/* для второй страницы */
 
 fieldset {
     border: none;
 }
 
 
-.navmenu2page {
+/* шапка меню */
+
+.menu-catalog {
     margin-left: 30%;
     padding-bottom: 20%;
 }
 
-#tek {
+.current-menu-item {
     padding-bottom: 8px;
     border-bottom: 2px solid #FB565A;
 }
 
-.mag {
+.shop {
     margin-top: -10%;
     padding-bottom: 10%;
     text-align: center;
     font-size: 300%;
 }
 
-.seredin section {
+
+/* середина */
+
+.middle section {
     float: left;
     display: block;
 }
 
-.left {
+.middle-left {
     height: 100%;
     width: 30%;
 }
 
-.right {
+.middle-right {
     height: 100%;
     width: 70%;
 }
 
-.sortir {
+.sort {
     margin-left: 10%;
     font-size: 85%;
     font-weight: 700;
     padding-top: 2%;
 }
 
-.sorpo {
+.sort-by {
     margin-top: -2.3%;
 }
 
-.sorpo ul {
+.sort-by ul {
     margin-right: 10%;
     margin-left: 30%;
 }
 
-.sorpo uL li {
+.sort-by-item li {
     float: right;
     margin-right: 5%;
     opacity: 0.3;
     text-transform: uppercase;
 }
 
-.sorpo uL li:hover {
+.sort-by-item li:hover {
     opacity: 1
 }
 
-.imgpr {
+.img-sait {
     margin-top: 5%;
     margin-left: 10%;
 }
 
-.liimg li {
+.img-screen-sait li {
     float: left;
     margin-right: 10%;
     margin-bottom: 5%;
@@ -558,23 +603,25 @@ fieldset {
     border-radius: 5px;
 }
 
-.liimg li:hover {
+.img-screen-sait li:hover {
     background-color: #EEEEEE;
 }
 
-.liimg img {
+.img-screen-sait img {
     border-radius: 15px;
 }
 
-.holder {
+.info-img {
     position: relative;
     width: 100%;
     height: 270px;
-    /* background:#ff6600; */
     margin-top: -270px;
 }
+.info-img:hover .block-info-img {
+    display: block;
+}
 
-.blockh {
+.block-info-img {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -589,7 +636,7 @@ fieldset {
     line-height: 200%;
 }
 
-.blockh p {
+.block-info-img p {
     color: #666666;
     padding-left: 15%;
     padding-right: 15%;
@@ -598,38 +645,27 @@ fieldset {
     padding-bottom: 5%;
 }
 
-.blockh h3 {
+.block-info-img h3 {
     font-size: 150%;
     padding-top: 5%;
 }
 
-.holder:hover .blockh {
-    display: block;
-}
-
-#buttonhold {
-    margin-left: 1%;
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
-
 /*  */
 
-.round {
+.round-screen {
     white-space: pre;
 }
 
-.round::before {
+.round-screen::before {
     content: "\2B24   \2B24   \2B24";
     color: white;
 }
 
-.strang {
+.page {
     margin-left: 8%;
 }
 
-.strang ul li a {
+.page-number {
     float: left;
     margin-left: 2%;
     margin-bottom: 5%;
@@ -641,7 +677,7 @@ fieldset {
     border-radius: 5px;
 }
 
-.strang ul li a:hover {
+.page-number:hover {
     background-color: #FFFFFF;
     border: 3px solid #DBDBDB;
 }
@@ -656,86 +692,63 @@ legend {
     padding-top: 6.5%;
     text-transform: uppercase;
     font-size: 85%;
-    margin-bottom: 14%;
+    margin-bottom: 30%;
 }
 
-.polos {
-    background-color: #EEEEEE;
-    width: 70%;
-    padding: 10% 10% 10% 10%;
-    border-radius: 5px;
-    margin-bottom: 5%;
+.band-big-round{
+  position:relative;
+  width:20px;
+  height:20px;
+  background:#FFFFFF;
+  border-radius:50px;
+  bottom: 10px;
+  float: left;
+  margin-right: 25%;
 }
 
-.polos p {
-    height: 1px;
+.band-small-round{
+  position:absolute;
+  top:7px;
+  left:7px;
+  width:5px;
+  height:5px;
+  background:#ABABAB;
+  border-radius:25px;
+}
+
+.band {
+
     background: linear-gradient(to right, #00CA74 80px, #D7DCDF 30px);
-    border: none;
-    text-align: left;
-    text-indent: 70px;
+    width: 70%;
+    margin-left: 5%;
+    padding: 1px 1px 1px 1px;
+    border-radius: 5px;
+
 }
 
-.polos p::before {
-    content: '\25EF';
-    position: relative;
-    top: -10px;
-    color: #FFFFFF;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    font-size: 150%;
+.background-band{
+      background-color: #EEEEEE;
+     padding-top: 20px;
+     margin-left: 6%;
+     margin-top: 5%;
+    border-radius: 10px;
+     width: 20%;
+     position: absolute;
+
+
 }
 
-u {
-    text-decoration: none;
-}
 
-u::before {
-    content: '\25EF';
-    position: relative;
-    top: -15px;
-    left: -22px;
-    color: #ABABAB;
-    background-color: #ABABAB;
-    border-radius: 50%;
-    font-size: 50%;
-}
-
-s {
-    text-decoration: none;
-}
-
-s::before {
-    content: '\25EF';
-    position: relative;
-    top: -10px;
-    left: -115px;
-    color: #FFFFFF;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    font-size: 150%;
-}
-
-q::before {
-    content: '\25EF';
-    position: relative;
-    top: -15px;
-    left: -132px;
-    color: #ABABAB;
-    background-color: #ABABAB;
-    border-radius: 50%;
-    font-size: 50%;
-}
-
-.minmaxc {
+.min-max-price {
     margin-left: 4%;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
-.minmaxc label {
+.min-max-price label {
     margin-right: 7%
 }
 
-.minmaxc label input {
+.min-max-price-text {
     width: 30%;
     padding: 3% 1% 3% 1%;
     text-align: center;
@@ -753,13 +766,19 @@ q::before {
 }
 
 
-.radio_input {
+/* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
+
+.radio-input {
     appearance: none;
+    /* убираем стандартные кружочки */
     position: absolute;
     border: none;
 }
 
-.radio_label {
+
+/* Стилизуем текст внутри тега label. */
+
+.radio-label {
     padding-left: 35px;
     font-size: 1rem;
     color: #283136;
@@ -768,7 +787,15 @@ q::before {
 }
 
 
-.radio_label:before {
+/* Создадим два состояния radio кнопок, с помощью псевдоэлементов before+after.
+Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном,
+изображающий отмеченное состояние. На деле, круг с меньшим диаметром after,
+будет находиться внутри круга с большим диаметром before. */
+
+
+/* Стилизуем псевдоэлемент before */
+
+.radio-label:before {
     content: "";
     display: block;
     width: 16px;
@@ -784,7 +811,9 @@ q::before {
 }
 
 
-.radio_label:after {
+/* Стилизуем псевдоэлемент after */
+
+.radio-label:after {
     content: "";
     display: block;
     width: 10px;
@@ -801,7 +830,7 @@ q::before {
     /* плавный переход для opacity */
 }
 
-.radio_input:checked + .radio_label:after {
+.radio-input:checked + .radio-label:after {
     opacity: 1;
 }
 
@@ -814,59 +843,88 @@ q::before {
 }
 
 
-.checkbox_input {
+/* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
+
+.checkbox-input {
     appearance: none;
+    /* убираем стандартные кружочки */
     position: absolute;
     border: none;
 }
 
-.checkbox_label {
+
+/* Стилизуем текст внутри тега label. */
+
+.checkbox-label {
     padding-left: 35px;
+    /* отступ слева */
     font-size: 1rem;
     color: #283136;
     cursor: pointer;
+    /* курсор рука */
 }
 
 
-.checkbox_label:before {
+/* Создадим два состояния checkbox кнопок, с помощью псевдоэлементов before+after. Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном, изображающий отмеченное состояние. На деле, круг с меньшим диаметром after, будет находиться внутри круга с большим диаметром before. */
+
+
+/* Стилизуем псевдоэлемент before */
+
+.checkbox-label:before {
     content: "";
     display: block;
+    /* не в строку */
     width: 18px;
+    /* ширина блока */
     height: 18px;
+    /* высота блока */
     border: 2px solid #4D4D4D;
+    /* рамка */
     background-color: #EEEEEE;
+    /* цвет фона */
     border-radius: 5px;
     position: absolute;
+    /* расположен точно в родителе */
     top: 0;
+    /* расстояние от верха родителя */
     left: 0;
+    /* расстояние слева от родителя */
     z-index: 1;
+    /* на нижнем слое */
     transition: border .1s linear;
+    /* плавный переход для border */
 }
 
-.checkbox_label:after {
+
+/* Стилизуем псевдоэлемент after */
+
+.checkbox-label:after {
     content: "\2714";
     display: block;
     width: 14px;
     height: 10px;
     color: #4D4D4D;
     opacity: 0;
+    /* полностью прозрачный */
     position: absolute;
     top: 0px;
     left: 5px;
     z-index: 2;
+    /* на верхнем слое */
     transition: opacity .1s linear;
+    /* плавный переход для opacity */
     font-size: 120%;
 }
 
-.checkbox_input:checked + .checkbox_label:after {
+.checkbox-input:checked + .checkbox-label:after {
     opacity: 1;
 }
 
-.ol {
+.features {
     margin-bottom: 2%;
 }
 
-.buttonleft {
+.button-info-left {
     width: 70%;
     margin-left: 4%;
     margin-top: 7%;
@@ -881,19 +939,6 @@ q::before {
 
 /*  */
 
-.button {
-    text-decoration: none;
-    color: white;
-    padding: 15px 54px 17px;
-    background-color: #FB565A;
-    margin-left: 8%;
-    border-radius: 5px;
-}
-
 .write-us {
-    margin-left: -3%;
-}
-
-.write-us a {
-    margin-top: 50%;
+margin-left: -9%
 }
