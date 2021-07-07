@@ -60,7 +60,6 @@ fieldset {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 4px solid blue; */
 }
 
 .button,
@@ -104,8 +103,7 @@ fieldset {
     margin-top: 44px;
 }
 
-.logo,
-.logo1 {
+.logo,.logo1 {
     padding-left: 140px;
     min-height: 70px;
     max-width: 160px;
@@ -115,13 +113,13 @@ fieldset {
     opacity: .3;
 }
 
-
 /* шапка меню */
 
 .menu-index {
     margin-left: 457px;
     padding-bottom: 9px;
     margin-top: -129px;
+    z-index: 2;
 }
 
 .menu-item a,
@@ -182,11 +180,6 @@ fieldset {
     margin-top: 2px;
 }
 
-/* .index {
-    display: inline-flex;
-    margin-right: 141px;
-} */
-
 .slide {
     width: 1157px;
     height: 431px;
@@ -211,11 +204,9 @@ fieldset {
     margin-top: 2px;
     margin-bottom: 26px;
 }
-
-.new-knew {
-    line-height: 27px;
+.new-knew{
+  margin-top: 312px;
 }
-
 .new-knew a {
     text-transform: uppercase;
     font-size: 100%;
@@ -227,24 +218,29 @@ fieldset {
 }
 
 .new-knew a:active {
-    background-color: #D7373B;
-    color: #FB565A;
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-    border-radius: 3px;
+  background-color: #D7373B;
+  color: #FB565A;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  border-radius: 3px;
 }
 /* слайдеры */
+.slider_picture{
+  margin-left: 1296px;
+  margin-top: -550px;
+  z-index: 1;
+}
 .slider_picture img{
   min-width: 754px;
-    min-height: 428px;
+  min-height: 428px;
+  margin-top: 93px;
 }
 
 .slider_picture li {
-    /* box-shadow: 0 -1px 0 2px hsla(0,0%,0%,.03); */
-    list-style:none;
-    position: absolute;
-    margin-left: -757px;
-margin-top: 4px;
-
+list-style: none;
+position: absolute;
+margin-left: -751px;
+max-height: 102px;
+margin-top: 413px;
 }
 .slider_picture input {
     display: none;
@@ -253,21 +249,20 @@ margin-top: 4px;
 /* Navigation */
 
 .slider_picture_label {
-  background-color: #FFFFFF;
-border: .2em solid transparent;
-bottom: 100px;
-left: 113px;
-border-radius: 100%;
-cursor: pointer;
-display: block;
-height: 12px;
-opacity: 1;
-position: absolute;
-width: 12px;
-visibility: visible;
-z-index: 1;
-margin-left: 128px;
-
+    background-color: #FFFFFF;
+    border: .2em solid transparent;
+    bottom: 100px;
+    left: 113px;
+    border-radius: 100%;
+    cursor: pointer;
+    display: block;
+    height: 12px;
+    opacity: 1;
+    position: absolute;
+    width: 12px;
+    visibility: visible;
+    z-index: 1;
+    margin-left: 128px;
 }
 
 .slider_picture_label_small{
@@ -304,18 +299,53 @@ li:nth-child(3) .slider_picture_label_small{
    left: 205px;
 }
 
-
 /* Images */
 
 .slider_picture img {
     height: 18.75em;
     opacity: 1;
-
     width: 25em;
-    /* vertical-align: top; */
     visibility: hidden;
+    margin-top: -330px;
+margin-left: -4px;
 }
 .slider_picture li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+
+}
+.slider_picture p {
+    height: 18.75em;
+    margin-left: -444px;
+    margin-top: -147px;
+    line-height: 27px;
+    font-size: 16px;
+    position: absolute;
+    opacity: 1;
+    white-space: pre;
+    width: 25em;
+    visibility: hidden;
+}
+
+.slider_picture li input:checked ~ p {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.slider_picture h2 {
+    height: 18.75em;
+    margin-left: -405px;
+    margin-top: -254px;
+    line-height: 55px;
+    font-size: 55px;
+    position: absolute;
+    opacity: 1;
+    white-space: pre;
+    visibility: hidden;
+}
+
+.slider_picture li input:checked ~ h2 {
     opacity: 1;
     visibility: visible;
 
@@ -806,8 +836,6 @@ li:nth-child(3) .slider_picture_label_small{
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     border-radius: 3px;
 }
-
-
 /*  */
 
 .footer-website {
@@ -881,8 +909,6 @@ li:nth-child(3) .slider_picture_label_small{
     font-size: 55px;
     margin-top: 99px;
 }
-
-
 /* середина */
 
 legend {
@@ -897,12 +923,6 @@ legend {
 .middle {
     margin-top: 55px;
 }
-
-
-/* .middle-section {
-	display: inline-block;
-
-} */
 
 .sort {
     margin-left: 541px;
@@ -959,7 +979,6 @@ legend {
 .img-website {
     margin-top: 82px;
     margin-left: 543px;
-    /* display: block; */
 }
 
 .img-screen-website {
@@ -1013,7 +1032,6 @@ legend {
 }
 
 .block-info-img p {
-    /* white-space: pre; */
     color: #666666;
     margin-left: auto;
     margin-right: auto;
@@ -1053,8 +1071,6 @@ legend {
     margin-left: 6px;
     padding-bottom: 14px;
 }
-
-
 /*  */
 
 .round-screen {
@@ -1249,8 +1265,6 @@ legend {
 .radio:active {
     opacity: 0.2;
 }
-
-
 /* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
 
 .radio-input {
@@ -1259,8 +1273,6 @@ legend {
     position: absolute;
     border: none;
 }
-
-
 /* Стилизуем текст внутри тега label. */
 
 .radio-label {
@@ -1270,13 +1282,10 @@ legend {
     /* курсор рука */
 }
 
-
 /* Создадим два состояния radio кнопок, с помощью псевдоэлементов before+after.
 Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном,
 изображающий отмеченное состояние. На деле, круг с меньшим диаметром after,
 будет находиться внутри круга с большим диаметром before. */
-
-
 /* Стилизуем псевдоэлемент before */
 
 .radio-label:before {
@@ -1293,8 +1302,6 @@ legend {
     z-index: 1;
     transition: border .1s linear;
 }
-
-
 /* Стилизуем псевдоэлемент after */
 
 .radio-label::after {
@@ -1317,8 +1324,6 @@ legend {
 .radio-input:checked + .radio-label:after {
     opacity: 1;
 }
-
-
 /* checkbox */
 
 .checkbox {
@@ -1338,8 +1343,6 @@ legend {
 .checkbox:active {
     opacity: 0.2;
 }
-
-
 /* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
 
 .checkbox-input {
@@ -1348,8 +1351,6 @@ legend {
     position: absolute;
     border: none;
 }
-
-
 /* Стилизуем текст внутри тега label. */
 
 .checkbox-label {
@@ -1363,8 +1364,6 @@ legend {
 
 
 /* Создадим два состояния checkbox кнопок, с помощью псевдоэлементов before+after. Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном, изображающий отмеченное состояние. На деле, круг с меньшим диаметром after, будет находиться внутри круга с большим диаметром before. */
-
-
 /* Стилизуем псевдоэлемент before */
 
 .checkbox-label:before {
@@ -1381,8 +1380,6 @@ legend {
     z-index: 1;
     transition: border .1s linear;
 }
-
-
 /* Стилизуем псевдоэлемент after */
 
 .checkbox-label:after {
