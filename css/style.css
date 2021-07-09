@@ -209,6 +209,7 @@ fieldset {
 }
 .new-knew a {
   text-transform: uppercase;
+  font-weight: 500;
   font-size: 100%;
   padding: 17px 55px 15px 55px;
 }
@@ -252,7 +253,6 @@ fieldset {
   background-color: #FFFFFF;
   border: .2em solid transparent;
   bottom: 100px;
-  left: 113px;
   border-radius: 100%;
   cursor: pointer;
   display: block;
@@ -262,11 +262,11 @@ fieldset {
   width: 12px;
   visibility: visible;
   z-index: 1;
-  margin-left: 128px;
+  margin-left: 121px;
 }
 
 .slider_picture_label_small{
-  left: 141px;
+  left: 134px;
   bottom: 105px;
   border-radius: 100%;
   cursor: pointer;
@@ -287,16 +287,16 @@ li:nth-child(1) .slider_picture_label {
   left: .5em;
 }
 li:nth-child(2) .slider_picture_label {
-  left: 2.5em;
+  left: 2.8em;
 }
 li:nth-child(2) .slider_picture_label_small {
-  left: 173.5px;
+  left: 171px;
 }
 li:nth-child(3) .slider_picture_label{
-  left: 4.5em;
+  left: 5em;
 }
 li:nth-child(3) .slider_picture_label_small{
-  left: 205px;
+  left: 206.5px;
 }
 
 /* Images */
@@ -584,9 +584,10 @@ li:nth-child(3) .slider_picture_label_small{
   font-size: 16px;
   text-align: left;
   margin-left: 2px;
-  font-weight: 700;
+  font-weight: 400;
   width: 22%;
   line-height: 120%;
+
 }
 
 .customers {
@@ -680,6 +681,7 @@ li:nth-child(3) .slider_picture_label_small{
   padding-right: 44px;
   padding-left: 46px;
   font-size: 16px;
+  font-weight: 500;
 }
 
 
@@ -808,7 +810,7 @@ li:nth-child(3) .slider_picture_label_small{
   padding-top: 12px;
   padding-left: 15px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
   min-width: 740px;
   min-height: 95px;
   border: 2px solid #D7DCDE;
@@ -883,7 +885,7 @@ li:nth-child(3) .slider_picture_label_small{
 .footer-right-column {
   margin-left: 406px;
   margin-top: -73px;
-  line-height: 27px;
+  line-height: 29px;
   margin-bottom: 33px;
 }
 
@@ -1040,7 +1042,7 @@ legend {
 .block-info-bottom{
   background-color: #EEEEEE;
   min-height: 231px;
-  margin-top: 353px;
+  margin-top: 290px;
   max-width: 360px;
   margin-left: -1px;
   max-height: 169px;
@@ -1085,9 +1087,12 @@ legend {
 }
 
 .button-price {
-  padding-left: 72px;
-  min-width: 1527px;
-  padding-bottom: 14px;
+  padding-left: 74px;
+  padding-right: 74px;
+  min-width: 2000px;
+  padding-bottom: 15px;
+  padding-top: 16px;
+  font-weight: 400;
 }
 /*  */
 
@@ -1108,7 +1113,7 @@ legend {
 .page {
   margin-left: 531px;
   margin-top: 22px;
-  margin-bottom: 46px
+  margin-bottom: 48px
 }
 
 .page li {
@@ -1269,7 +1274,6 @@ legend {
 .radio {
   position: relative;
   margin-bottom: 18px;
-  opacity: 0.5;
   font-weight: 400;
   margin-left: 7px;
   margin-top: 2px;
@@ -1315,6 +1319,7 @@ legend {
   background-color: #fff;
   border-radius: 50%;
   position: absolute;
+  opacity: 0.5;
   top: 0;
   left: 0;
   z-index: 1;
@@ -1340,14 +1345,13 @@ legend {
 }
 
 .radio-input:checked + .radio-label:after {
-  opacity: 1;
+  opacity: 0.5;
 }
 /* checkbox */
 
 .checkbox {
   position: relative;
   margin-bottom: 20px;
-  opacity: 0.5;
   font-size: 16px;
   font-weight: 400;
   margin-top: -2px;
@@ -1392,6 +1396,7 @@ legend {
   border: 2px solid #4D4D4D;
   background-color: #EEEEEE;
   border-radius: 3px;
+  opacity: 0.5;
   position: absolute;
   top: 0;
   left: 0;
@@ -1419,7 +1424,7 @@ legend {
 }
 
 .checkbox-input:checked + .checkbox-label:after {
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .features {
@@ -1429,16 +1434,17 @@ legend {
 }
 
 .button-info-left {
-  margin-top: 20px;
+  margin-top: 21px;
   margin-left: 21px;
   border: none;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 16px;
   border-radius: 3px;
   min-width: 259px;
   min-height: 50px;
   background-color: #EEEEEE;
-  color: #000000
+  color: #000000;
+  text-transform: uppercase;
 }
 
 .button-info-left:hover {
