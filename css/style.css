@@ -26,7 +26,7 @@ body {
   margin-left: auto;
   background-color: white;
   color: black;
-  font-family: "Roboto", "Robotobold", "Robotomedium";
+  font-family: "Roboto", "Robotobold", "Robotomedium", Georgia, serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -40,10 +40,6 @@ h3,
 figure {
   margin: 0;
   padding: 0;
-}
-
-ul {
-  list-style: none;
 }
 
 a {
@@ -511,7 +507,7 @@ li:nth-child(3) .slider_picture_label_small{
 
 .header-info {
   line-height: 25px;
-  margin-bottom: 43px;
+  margin-bottom: 42px;
   max-width: 647px;
 }
 
@@ -524,6 +520,7 @@ li:nth-child(3) .slider_picture_label_small{
 .detail-list {
   margin-top: 8px;
   line-height: 47px;
+  list-style: none;
 }
 
 .detail-list li::before {
@@ -865,6 +862,7 @@ li:nth-child(3) .slider_picture_label_small{
   height: 50%;
   width: 50%;
   background-color: #E1E1E1;
+  fill:  #FFFFFF;
   padding: 25% 25% 25% 25%;
   border-radius: 50%;
   opacity: .8;
@@ -879,7 +877,6 @@ li:nth-child(3) .slider_picture_label_small{
   background-color: #D7373B;
   opacity: 1;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  border-radius: 3px;
 }
 
 .footer-right-column {
@@ -967,13 +964,19 @@ legend {
   margin-left: 715px;
   margin-top: -23px;
   font-size: 17px;
-  ;
 }
 
 .sort-by-item-up-down li {
   margin-right: 10px;
   margin-top: -36px;
   display: inline-block;
+  /* color: #A6A6A6; */
+}
+.sort-by-item-up{
+  color: #A6A6A6;
+}
+.sort-by-item-down{
+  color: #231F20;
 }
 
 .sort-by-item li:hover,
@@ -1252,14 +1255,12 @@ legend {
   min-height: 32px;
   border: none;
   background-color: #EEEEEE;
-  border-radius: 1px;
+  border-radius: 3px;
   text-align: center;
   font-size: 16px;
+  margin-left: 10px;
 }
 
-.min-max-price-text {
-  margin-left: 11px;
-}
 
 .layout {
   margin-bottom: 16px;
