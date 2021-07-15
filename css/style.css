@@ -20,7 +20,7 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0 auto;
   padding: 0;
   margin-left: auto;
@@ -30,7 +30,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  overflow-x:visible;
 }
+html{
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 p,
 ul,
@@ -84,15 +92,23 @@ fieldset {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
 }
+.menu-logo{
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: red; */
+  max-width: 1200px;
+}
 
 .header {
   background-color: #EEEEEE;
   height: 543px;
+  min-width: 1440px;
 }
 
 .header-catalog {
   background-color: #EEEEEE;
   height: 354px;
+  min-width: 1440px;
 }
 
 .logo {
@@ -100,7 +116,7 @@ fieldset {
 }
 
 .logo,.logo1 {
-  padding-left: 140px;
+  margin-left: 20px;
   min-height: 70px;
   max-width: 160px;
 }
@@ -109,10 +125,10 @@ fieldset {
   opacity: .3;
 }
 
-/* шапка меню */
+
 
 .menu-index {
-  margin-left: 457px;
+  margin-left: 342px;
   padding-bottom: 9px;
   margin-top: -129px;
   z-index: 2;
@@ -134,18 +150,17 @@ fieldset {
 
 .menu-item,
 .menu-item-cart {
-  display: inline-block;
-  margin-top: 80px;
+  display: inline-flex;
   margin-left: -1px;
   vertical-align: baseline;
 }
 
 .menu-item {
-  margin-left: -1px;
+  margin-left: -3px;
 }
 
 .menu-item-cart {
-  margin-left: 100px;
+  margin-left: 224px;
 }
 
 .menu-item a:hover,
@@ -165,12 +180,16 @@ fieldset {
   min-height: 25px;
   min-width: 19px;
 }
+.menu-section{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
 
 .section-slider {
-  width: 100%;
-  height: 473px;
-  left: 140px;
+  /* left: 140px; */
   display: inline-flex;
+  vertical-align: baseline;
 }
 
 .section-slider img {
@@ -181,7 +200,7 @@ fieldset {
   width: 1157px;
   height: 431px;
   margin-top: 10px;
-  padding-left: 140px;
+  padding-left: 20px;
 }
 
 .slide h2 {
@@ -221,7 +240,7 @@ fieldset {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
 }
-/* слайдеры */
+
 .slider_picture{
   margin-left: 1296px;
   margin-top: -550px;
@@ -231,6 +250,12 @@ fieldset {
   min-width: 754px;
   min-height: 428px;
   margin-top: 93px;
+  height: 18.75em;
+  opacity: 1;
+  width: 25em;
+  visibility: hidden;
+  margin-top: -297px;
+  margin-left: -123px;
 }
 
 .slider_picture li {
@@ -249,7 +274,7 @@ fieldset {
 .slider_picture_label {
   background-color: #FFFFFF;
   border: .2em solid transparent;
-  bottom: 100px;
+  bottom: 65px;
   border-radius: 100%;
   cursor: pointer;
   display: block;
@@ -259,12 +284,12 @@ fieldset {
   width: 12px;
   visibility: visible;
   z-index: 1;
-  margin-left: 121px;
+  margin-left: 1px;
 }
 
 .slider_picture_label_small{
-  left: 134px;
-  bottom: 105px;
+  left: 14px;
+  bottom: 70px;
   border-radius: 100%;
   cursor: pointer;
   display: block;
@@ -287,25 +312,18 @@ li:nth-child(2) .slider_picture_label {
   left: 2.8em;
 }
 li:nth-child(2) .slider_picture_label_small {
-  left: 171px;
+  left: 52px;
 }
 li:nth-child(3) .slider_picture_label{
   left: 5em;
 }
 li:nth-child(3) .slider_picture_label_small{
-  left: 206.5px;
+  left: 87px;
 }
 
 /* Images */
 
-.slider_picture img {
-  height: 18.75em;
-  opacity: 1;
-  width: 25em;
-  visibility: hidden;
-  margin-top: -330px;
-  margin-left: -4px;
-}
+
 .slider_picture li input:checked ~ img {
   opacity: 1;
   visibility: visible;
@@ -313,8 +331,8 @@ li:nth-child(3) .slider_picture_label_small{
 }
 .slider_picture p {
   height: 18.75em;
-  margin-left: -469px;
-  margin-top: -147px;
+  left: -588px;
+  top: -112px;
   line-height: 27px;
   font-size: 16px;
   position: absolute;
@@ -333,8 +351,8 @@ li:nth-child(3) .slider_picture_label_small{
 
 .slider_picture h2 {
   height: 18.75em;
-  margin-left: -405px;
-  margin-top: -254px;
+  left: -524px;
+  margin-top: -220px;
   line-height: 55px;
   font-size: 55px;
   position: absolute;
@@ -356,15 +374,19 @@ li:nth-child(3) .slider_picture_label_small{
   height: 347px;
   left: 140px;
   top: 625px;
+
 }
 
 
-/* услуги */
+
 
 .services {
   margin-left: 40px;
   margin-top: 4px;
   margin-bottom: 22px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .services h3 {
@@ -378,9 +400,11 @@ li:nth-child(3) .slider_picture_label_small{
   margin-left: 100px;
 }
 
+
 .services li {
-  display: inline-block;
-  margin-left: 98px;
+  display: inline-table;
+  margin-left: 20px;
+  margin-right: 77px;
   margin-top: 78px;
   font-size: 28px;
   font-weight: 700;
@@ -466,42 +490,35 @@ li:nth-child(3) .slider_picture_label_small{
   border-radius: 3px;
 }
 
-.gorizontal-line {
-  width: 80%;
-  margin-left: 10%;
-  margin-bottom: 82px;
-}
-
-.gorizontal-line,
 .line {
   border: none;
-  /* Убираем границу */
   background-color: #EEEEEE;
-  /* Цвет линии */
   color: #EEEEEE;
-  /* Цвет линии для IE6-7 */
   height: 2px;
-  /* Толщина линии */
-  margin-top: 5%;
-  margin-right: 10%;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1160px;
 }
 
-.line {
-  margin-left: 143px;
-  width: 80%;
-}
+
 
 .company {
-  margin-left: 140px;
+  margin-left: 20px;
   margin-top: 44px;
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: -15px;
   vertical-align: baseline;
+}
+.company_nerds{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .company h2 {
   font-size: 45px;
-  line-height: 49px;
+  line-height: 47px;
   margin-bottom: 28px;
   margin-top: 2px;
   word-spacing: 1px;
@@ -521,25 +538,25 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 .detail-list {
-  margin-top: 8px;
+  margin-top: 13px;
   line-height: 47px;
   list-style: none;
 }
 
 .detail-list li::before {
-  content: "\25AC      ";
+  content: "\25AC\25AC      ";
   color: #FB565A;
   border: none;
-  font-size: 23px;
+  font-size: 13px;
   word-spacing: 7px;
 }
 
 .work {
-  display: inline-block;
-  margin-top: -33%;
   text-align: center;
   line-height: 16px;
-  vertical-align:baseline;
+  margin-left: 867px;
+  margin-top: -411px;
+  vertical-align: baseline;
 }
 
 .work p {
@@ -548,7 +565,7 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 .work img {
-  height: 90%;
+  height: 49%;
   margin-left: -68px;
   margin-bottom: 38px;
 }
@@ -556,7 +573,7 @@ li:nth-child(3) .slider_picture_label_small{
 .since {
   margin-left: -65px;
   font-weight: 700;
-  margin-bottom: 39px;
+  margin-bottom: 43px;
   word-spacing: 1px;
   text-transform: uppercase;
 }
@@ -564,13 +581,14 @@ li:nth-child(3) .slider_picture_label_small{
 .since-advantage-procent,
 .since-advantage {
   margin-left: -130px;
-  padding-top: 31px;
+  padding-top: 29px;
+  padding-bottom: 2px;
 }
 
 .since-advantage-procent li,
 .since-advantage li {
-  display: inline-block;
-  margin-left: 16px;
+  display: inline-table;
+  margin-left: 20px;
   margin-top: -17px;
   font-size: 44px;
   font-weight: 700;
@@ -579,13 +597,16 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 .since-advantage {
-  margin-left: -76px;
+  margin-left: -68px;
+  display: inline-flex;
+  vertical-align: baseline;
+  margin-bottom: -20px;
 }
 
 .since-advantage li {
   font-size: 16px;
   text-align: left;
-  margin-left: 2px;
+  margin-left: 24px;
   font-weight: 400;
   width: 22%;
   line-height: 120%;
@@ -594,33 +615,38 @@ li:nth-child(3) .slider_picture_label_small{
 
 .customers {
   margin-left: 84px;
-  margin-top: -29px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  margin-top: -27px
 }
 
 .customers li {
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
+  margin-right: 38px;
 }
 
 .customers img {
-  margin-left: 79px;
-  margin-top: 61px;
-  margin-bottom: -30px;
-  opacity: 0.2;
+  margin-left: 53px;
+  margin-top: 66px;
+  margin-bottom: -37px;
+  max-width: 198px;
+  opacity: 0.5;
 }
 
 .customers-pink {
-  padding-left: 12px;
-  padding-top: 7px;
-  min-height: 74px;
-  min-width: 201px;
+  min-height: 55px;
+  min-width: 192px;
+  padding-left: 17px;
 }
 
+
 .customers-mishka {
-  padding-left: 22px;
+  padding-left: 18px;
   padding-top: 8px;
   min-height: 80px;
-  min-width: 190px;
+  min-width: 179px;
 }
 
 .customers img:hover {
@@ -630,15 +656,24 @@ li:nth-child(3) .slider_picture_label_small{
 .customers img:active {
   opacity: .1;
 }
+.adress-metka{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
 
 .adress img {
   width: 100%;
+  min-width: 1440px;
+  margin-top: 75px;
 }
 
 .metka img {
   position: absolute;
   height: 190px;
   width: 231px;
+  max-width: 231px;
+  min-width: 231px;
   margin-left: 846px;
   margin-top: -354px
 }
@@ -649,7 +684,7 @@ li:nth-child(3) .slider_picture_label_small{
   margin-left: 140px;
   padding-left: 50px;
   margin-right: 50px;
-  margin-top: -372px;
+  margin-top: -369px;
   position: absolute;
   padding-top: 45px;
   line-height: 41px;
@@ -688,7 +723,7 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 
-/* отдельное окно */
+
 
 .background-modal {
   position: fixed;
@@ -755,7 +790,6 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 
-/* стили в нем */
 
 .window {
   color: black;
@@ -839,11 +873,11 @@ li:nth-child(3) .slider_picture_label_small{
   border: none;
 }
 
-.button-send:hover {
+.button-send:hover, .button-price:hover {
   background-color: #E74246;
 }
 
-.button-send:active {
+.button-send:active, .button-price:active {
   background-color: #D7373B;
   color: #FB565A;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -852,44 +886,49 @@ li:nth-child(3) .slider_picture_label_small{
 /*  */
 
 .footer-website {
-  margin-left: 132px;
   margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px
+}
+.icons{
+  margin-left: -3px;
 }
 
 .icons li {
   display: inline-block;
   vertical-align: baseline;
-  height: 81px;
-  width: 81px;
+  height: 79px;
+  width: 79px;
   margin-left: 6px;
   margin-top: 38px;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  fill:  #FFFFFF;
+  opacity: .8
 }
 
 .footer-btn img {
-  height: 50%;
-  width: 50%;
-  background-color: #E1E1E1;
-  fill:  #FFFFFF;
-  padding: 25% 25% 25% 25%;
-  border-radius: 50%;
-  opacity: .8;
+  height: 23%;
+  width: 40%;
+  padding: 39% 32% 25% 32%;
 }
 
-.footer-btn img:hover {
+.icons li:hover {
   background-color: #E74246;
   opacity: 1;
 }
 
-.footer-btn img:active {
+.icons li:active {
   background-color: #D7373B;
   opacity: 1;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .footer-right-column {
-  margin-left: 406px;
-  margin-top: -73px;
-  line-height: 29px;
+  margin-left: 398px;
+  margin-top: -69px;
+  line-height: 31px;
   margin-bottom: 33px;
 }
 
@@ -903,10 +942,7 @@ li:nth-child(3) .slider_picture_label_small{
 }
 
 
-/* для второй страницы */
 
-
-/* шапка меню */
 
 .menu-catalog {
   margin-left: 502px;
@@ -921,9 +957,12 @@ li:nth-child(3) .slider_picture_label_small{
 .shop {
   text-align: center;
   font-size: 55px;
-  margin-top: 99px;
+  margin-top: 83px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* середина */
+
 
 legend {
   font-weight: 700;
@@ -936,10 +975,13 @@ legend {
 
 .middle {
   margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
 }
 
 .sort {
-  margin-left: 541px;
+  margin-left: 421px;
   font-size: 18px;
   font-weight: 700;
   margin-top: -775px;
@@ -955,7 +997,7 @@ legend {
 }
 
 .sort-by-item li {
-  display: inline-block;
+  display: inline-flex;
   margin-right: 22px;
   vertical-align: baseline;
 }
@@ -977,7 +1019,7 @@ legend {
 .sort-by-item-up-down li {
   margin-right: 10px;
   margin-top: -36px;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: baseline;
 }
 .sort-by-item-up{
@@ -998,23 +1040,27 @@ legend {
 }
 
 .img-website {
-  margin-top: 82px;
+  margin-top: 86px;
   margin-left: 543px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .img-screen-website {
-  margin-left: -2px;
+  margin-left: -160px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 .img-screen-website li {
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
   background: linear-gradient(to top, #FFFFFF 50%, #EEEEEE 50%);
   padding: 1% 0% 0% 0%;
   text-indent: 3%;
   text-align: justify;
   border-radius: 3px;
-  margin-right: 37px;
+  margin-left: 38px;
   margin-top: 3px;
   vertical-align: middle;
 }
@@ -1031,10 +1077,26 @@ legend {
   position: relative;
   width: 100%;
   height: 543px;
-  margin-top: -521px;
+  margin-top: -518px;
 }
 
-.info-img:hover .block-info-img {
+.info-img:hover .block-info-img{
+  display: block;
+  top: 283px;
+}
+.block-info{
+  display: none;
+
+}
+
+.information{
+  position: absolute;
+  bottom: 153px;
+  background-color: #EEEEEE;
+  min-width: 360px;
+
+}
+.info-img:hover .block-info{
   display: block;
 }
 
@@ -1047,17 +1109,17 @@ legend {
   background-color: transparent;
   border-radius: 3px;
   color: black;
-  display: none;
   text-align: center;
 }
 
 .block-info-bottom{
   background-color: #EEEEEE;
   min-height: 231px;
-  margin-top: 290px;
+  max-height: 231px;
+  min-width: 360px;
   max-width: 360px;
   margin-left: -1px;
-  max-height: 169px;
+  line-height: 332px;
   border-radius: 3px;
 
 }
@@ -1068,13 +1130,12 @@ legend {
   margin-right: auto;
   text-align: center;
   max-width: 255px;
-  max-height: 37px;
+  min-width: 255px;
   font-size: 16px;
   font-weight: 400;
-  padding-top: 16px;
-  line-height: 19px;
-  padding-bottom: 47px;
-  margin-left: 48px;
+  line-height: 20px;
+  margin-left: 49px;
+  margin-top: 2px;
 }
 
 .sedona {
@@ -1084,9 +1145,10 @@ legend {
 .block-info-img h3 {
   font-size: 18px;
   font-weight: 700;
-  padding-top: 31px;
-  margin-left: -7px;
+  padding-top: 14px;
+  margin-left: -8px;
   text-transform: uppercase;
+  line-height: 47px;
 }
 
 .block-info-img h3:hover {
@@ -1102,9 +1164,10 @@ legend {
   padding-left: 74px;
   padding-right: 74px;
   min-width: 2000px;
-  padding-bottom: 15px;
-  padding-top: 16px;
+  padding-bottom: 14px;
+  padding-top: 17px;
   font-weight: 400;
+  margin-left: -11px;
 }
 /*  */
 
@@ -1123,13 +1186,13 @@ legend {
 }
 
 .page {
-  margin-left: 531px;
+  margin-left: 412px;
   margin-top: 22px;
-  margin-bottom: 48px
+  margin-bottom: -26px;
 }
 
 .page li {
-  display: inline-block;
+  display: inline-flex;
   margin-left: -3px;
   vertical-align: baseline;
 }
@@ -1165,14 +1228,12 @@ legend {
 .page-number,
 .page-number-one,
 .page-number-next {
-  display: inline-block;
   margin-left: 11px;
   margin-bottom: 5%;
   background-color: #EEEEEE;
   border: 3px solid #EEEEEE;
   font-weight: 700;
   text-align: center;
-  vertical-align: baseline;
   border-radius: 3px;
 }
 
@@ -1196,13 +1257,11 @@ legend {
   border: 3px solid #DBDBDB;
 }
 
-.filters {
-  margin-left: 120px;
-}
+
 
 .background-band {
   background-color: #EEEEEE;
-  margin-left: 139px;
+  margin-left: 20px;
   margin-top: 80px;
   border-radius: 3px;
   min-width: 260px;
@@ -1218,7 +1277,7 @@ legend {
   margin-top: 38px;
   border-radius: 3px;
   min-width: 205px;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: baseline;
 }
 
@@ -1230,8 +1289,6 @@ legend {
   background: #FFFFFF;
   border-radius: 50px;
   bottom: 10px;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .band-big-round-two {
@@ -1257,7 +1314,7 @@ legend {
 }
 
 .min-max-price label {
-  display: inline-block;
+  display: inline-table;
   margin-left: 32px;
   vertical-align: middle;
 }
@@ -1295,34 +1352,30 @@ legend {
 }
 
 .radio:hover {
-  opacity: 1;
+  color: #000000;
+  opacity: 1
 }
 
 .radio:active {
   opacity: 0.2;
 }
-/* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
+
 
 .radio-input {
   appearance: none;
-  /* убираем стандартные кружочки */
   position: absolute;
   border: none;
 }
-/* Стилизуем текст внутри тега label. */
+
 
 .radio-label {
   padding-left: 35px;
   font-size: 1rem;
   cursor: pointer;
-  /* курсор рука */
 }
-
-/* Создадим два состояния radio кнопок, с помощью псевдоэлементов before+after.
-Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном,
-изображающий отмеченное состояние. На деле, круг с меньшим диаметром after,
-будет находиться внутри круга с большим диаметром before. */
-/* Стилизуем псевдоэлемент before */
+.radio  input[type=radio] {
+  display: none;
+}
 
 .radio-label:before {
   content: "";
@@ -1339,7 +1392,27 @@ legend {
   z-index: 1;
   transition: border .1s linear;
 }
-/* Стилизуем псевдоэлемент after */
+
+
+.radio-input:checked + .radio-label:after {
+  opacity: 0.7;
+}
+.radio-input:hover + .radio-label::before {
+  opacity: 1;
+}
+.radio-input:active + .radio-label:after {
+  opacity: 0.3;
+}
+
+.radio label:hover::after {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.radio label:active::after {
+  opacity: 0.3;
+  font-weight: 700;
+}
 
 .radio-label::after {
   content: "";
@@ -1353,9 +1426,7 @@ legend {
   top: 7px;
   left: 7px;
   z-index: 2;
-  /* на верхнем слое */
   transition: opacity .1s linear;
-  /* плавный переход для opacity */
 }
 
 .radio-input:checked + .radio-label:after {
@@ -1379,67 +1450,68 @@ legend {
 .checkbox:active {
   opacity: 0.2;
 }
-/* Спрячем дефолтные маленькие кружочки, свойство appearance обязательно прописываем с вендорными префиксами. */
 
 .checkbox-input {
   appearance: none;
-  /* убираем стандартные кружочки */
   position: absolute;
   border: none;
 }
-/* Стилизуем текст внутри тега label. */
 
 .checkbox-label {
   padding-left: 35px;
-  /* отступ слева */
   font-size: 1rem;
   color: #283136;
   cursor: pointer;
-  /* курсор рука */
 }
-
-
-/* Создадим два состояния checkbox кнопок, с помощью псевдоэлементов before+after. Стилизуем before, как пустой белый кружок, after – кружок с цветным фоном, изображающий отмеченное состояние. На деле, круг с меньшим диаметром after, будет находиться внутри круга с большим диаметром before. */
-/* Стилизуем псевдоэлемент before */
+.checkbox:hover {
+  color: #000000;
+  opacity: 1
+}
 
 .checkbox-label:before {
   content: "";
   display: block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid #4D4D4D;
-  background-color: #EEEEEE;
+  width: 27px;
+  height: 29px;
   border-radius: 3px;
-  opacity: 0.5;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  transition: border .1s linear;
+  background: url(../img/checkbox.svg) 0 0 no-repeat;
 }
-/* Стилизуем псевдоэлемент after */
 
 .checkbox-label:after {
-  content: "\2714";
+  content: "";
   display: block;
-  width: 14px;
-  height: 10px;
+  width: 55px;
+  height: 55px;
   color: #4D4D4D;
   opacity: 0;
-  /* полностью прозрачный */
   position: absolute;
-  top: 0px;
-  left: 5px;
+  top: 1px;
+  left: 1px;
   z-index: 2;
-  /* на верхнем слое */
   transition: opacity .1s linear;
-  /* плавный переход для opacity */
   font-size: 120%;
+  background: url(../img/checkbox_after.svg) 0 0 no-repeat;
 }
 
 .checkbox-input:checked + .checkbox-label:after {
-  opacity: 0.5;
+  opacity: 0.7;
 }
+.checkbox-input:hover + .checkbox-label::before {
+  opacity: 1;
+  font-weight: 700;
+  background: url(../img/checkbox_hover_before.svg) 0 0 no-repeat;
+  margin-left: 1px;
+}
+.checkbox-input:active + .checkbox-label:after {
+  opacity: 0.3;
+}
+
+
 
 .features {
   margin-bottom: 15px;
